@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Sign Up | Log In</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="title-text">
+      <div class="title login">Account</div>
+      <div class="title signup">Account</div>
+    </div>
+    <div class="form-container">
+      <div class="slide-controls">
+        <input type="radio" name="slide" id="login" checked>
+        <input type="radio" name="slide" id="signup">
+        <label for="login" class="slide login">Login</label>
+        <label for="signup" class="slide signup">SignUp</label>
+        <div class="slider-tab"></div>
+      </div>
+      <div class="form-inner">
+        <!-- Login Form -->
+        <form action="/Live Feed/Live.html" class="login">
+          <div class="field">
+            <input type="text" placeholder="Email Address" required>
+          </div>
+          <div class="field">
+            <input type="password" placeholder="Password" required>
+          </div>
+          <div class="pass-link">
+            <a href="#">Reset password?</a>
+          </div>
+          <button type="submit" class="button button4">Click Here</button>
+          <div class="signup-link">
+            Don't Have Account? <a href="">Create A New</a>
+          </div>
+        </form>
+
+        <!-- Sign Up Form -->
+        <form action="" class="signup">
+          <div class="field">
+            <input type="text" placeholder="Email Address" required>
+          </div>
+          <div class="field">
+            <input type="password" placeholder="Password" required>
+          </div>
+          <div class="field">
+            <input type="password" placeholder="Confirm Password" required>
+          </div>
+          <a href="/Live Feed/Live.html">
+          <button type="submit" class="button button4">Sign Up</button></a>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

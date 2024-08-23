@@ -1,0 +1,99 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  background-image: url("img.jpg"); /* Ensure this path is correct */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  z-index: -1; /* Ensure the background image is behind the content */
+}
+
+.bg-text {
+  background: rgba(255, 255, 255, 0.8); /* White background with slight opacity */
+  color: #333; /* Dark grey text for readability */
+  border: 1px solid #ddd; /* Light grey border */
+  border-radius: 8px; /* Slightly rounded corners */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+h1 {
+  font-size: 2.5em; /* Larger font size for emphasis */
+  margin: 0;
+  color: #1e90ff; /* Bright blue for the heading */
+}
+
+p {
+  font-size: 1.2em; /* Slightly larger font size */
+  margin: 10px 0;
+  color: #555; /* Medium grey for paragraph text */
+}
+
+.button {
+  background: #1e90ff; /* Bright blue background */
+  border: none;
+  color: white;
+  padding: 12px 24px; /* Adequate padding */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  margin: 10px 5px;
+  cursor: pointer;
+  border-radius: 25px; /* Rounded corners */
+  transition: all 0.3s ease; /* Smooth transitions */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.button:hover {
+  background: #0056b3; /* Darker blue on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+@media (max-width: 768px) {
+  .bg-text {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .button {
+    font-size: 0.9em;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  .button {
+    font-size: 0.8em;
+    padding: 8px 16px;
+  }
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pothole Detector</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Linking CSS file -->
+</head>
+<body>
+    <div class="container"> <!-- Main container -->
+        <h1>Pothole Detector</h1> <!-- Title -->
+        <div class="camera-section"> <!-- Section for camera and buttons -->
+            <video id="video" autoplay></video> <!-- Video stream element -->
+            <button id="captureButton">Capture Image</button> <!-- Capture button -->
+            <button id="uploadButton" style="display:none;">Upload Image</button> <!-- Upload button, hidden initially -->
+            <div id="result"></div> <!-- Result display -->
+        </div>
+    </div>
+    <script src="script.js"></script> <!-- Linking JS file -->
+</body>
+</html>
